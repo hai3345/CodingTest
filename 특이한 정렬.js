@@ -28,7 +28,8 @@ function solution(numlist, n) {
             n2 = Math.abs(b-n);
             console.log("a :",a)
             console.log("b :",b)
-        return n1 < n2 ? -1 : n1 === n2 ? a < b ? 1 : -1 : 1;
+        return n1 < n2 ? -1 :
+               n1 === n2 ?( a < b ? 1 : -1) : 1;
     });
     return numlist;
 
