@@ -1,4 +1,4 @@
-//정답
+//정답..
 function solution(id_pw, db) {
 
    // let id = Object.fromEntries(id_pw)
