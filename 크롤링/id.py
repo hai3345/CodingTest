@@ -28,16 +28,16 @@ service = Service(executable_path=ChromeDriverManager().install())
 driver = webdriver.Chrome(service=service, options=chrome_options)
 
 # 웹페이지 해당 주소 이동
-driver.get("https://maple.gg/")
+driver.get("https://maplestory.nexon.com/Common/Guild?gid=18729&wid=45")
 driver.implicitly_wait(10)
 
 name_xpath = '//*[@id="app"]/div[2]/section[1]/form/div/div/div/input'
 name = "날밤"
 
-
+"""
 driver.find_element(By.XPATH,name_xpath).send_keys("날밤")
 driver.implicitly_wait(10)
 driver.find_element(By.XPATH,'//*[@id="app"]/div[2]/section[1]/form/div/div/div/div/button').click()
 driver.find_element(By.XPATH,'//*[@id="app"]/section/div/div[2]/div[2]/div/div[1]/a/div').click()
-
+"""
 #//*[@id="guild-content"]/section/div[3]/div[]/section/div[2]/b/a
